@@ -1,7 +1,7 @@
 const {config} = require('./wdio.conf');
 
 config.specs = [
-    './src/specs/desktopWeb/**/*.js'
+    './test/specs/desktopWeb/**/*.js'
     // './src/specs/desktopWeb/verifyVideoIsPlaying*.js'
 ];
 

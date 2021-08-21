@@ -1,8 +1,8 @@
 const {config} = require('./wdio.conf');
 
 config.specs = [
-    // './src/specs/desktopWeb/**/*.js'
-    './src/specs/desktopWeb/videoBannerTest.js'
+    './test/specs/desktopWeb/**/*.js'
+    // './src/specs/desktopWeb/videoBannerTest.js'
 ];
 
 config.maxInstances = 3

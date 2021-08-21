@@ -2,7 +2,7 @@ const {config} = require('./wdio.conf');
 const { join } = require('path');
 
 config.specs = [
-    './src/specs/visualRegression/**/*.js'
+    './test/specs/visualRegression/**/*.js'
     // './src/specs/visualRegression/compareElementTest.js'
 ];
 

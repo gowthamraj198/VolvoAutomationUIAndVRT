@@ -7,7 +7,7 @@ config.maxInstances = 2
 
 
 config.specs = [
-    './src/specs/mobileBrowser/**/*.js'
+    './test/specs/mobileBrowser/**/*.js'
 ];
 
 
