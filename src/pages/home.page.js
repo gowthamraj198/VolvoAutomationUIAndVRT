@@ -41,6 +41,10 @@ class HomePage extends Page {
         return $$('div[data-autoid="videoTestimonials:container"]')
     }
 
+    get testimonialVideos() {
+        return $('#VideoTestimonials-1')
+    }
+
     get carouselItem() {
         return $('a[data-autoid="productListCarouselItem-0"]')
     }
@@ -84,6 +88,12 @@ class HomePage extends Page {
         this.videoBanner.scrollIntoView();
         this.takeScreenshot(this.videoBanner,path,image)
     }
+
+    goTovideoTestimonials() {
+        this.wait((this.testimonialVideos))
+        this.testimonialVideos.scrollIntoView();
+    }
+
 }
 
 module.exports = new HomePage();

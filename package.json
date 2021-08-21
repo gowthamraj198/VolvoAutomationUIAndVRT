@@ -5,6 +5,7 @@
   "scripts": {
     "desktopMobile": "wdio config/mobileWeb.config.js",
     "desktopWeb": "npx wdio ./config/desktopWeb.config.js",
+    "vrt": "npx wdio ./config/visualRegression.config.js",
     "lint": "eslint ."
   },
   "keywords": [
@@ -32,8 +33,8 @@
     "global-agent": "^3.0.0",
     "wdio-html-nice-reporter": "^7.7.14",
     "resemblejs": "^4.0.0",
-    "mz": "^2.7.0"
-
+    "mz": "^2.7.0",
+    "wdio-image-comparison-service": "^2.3.0"
   },
   "dependencies": {
     "@wdio/selenium-standalone-service": "^7.8.0",
