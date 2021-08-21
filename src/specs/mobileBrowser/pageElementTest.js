@@ -2,7 +2,7 @@ const HomePage = require('../../pages/home.page');
 var config = require('../../data/test.config.js');
 const assert = require('assert');
 
-describe('In Home page', () => {
+describe('Home page', () => {
 
     before(function() {
         // runs once before the first test in this block
@@ -11,7 +11,7 @@ describe('In Home page', () => {
     });
 
     
-    it('see all sections are loaded properly', () => {
+    it('should have all sections are loaded properly', () => {
         assert(HomePage.getTextStatement()!='');
         assert(HomePage.getCallOutText()!='');
         assert(HomePage.getCarSafetyText()!='');

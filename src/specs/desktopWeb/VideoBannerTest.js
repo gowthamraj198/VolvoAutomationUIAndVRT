@@ -2,14 +2,14 @@ const HomePage = require('../../pages/home.page');
 let config = require('../../data/test.config.js');
 const assert = require('assert');
 
-describe('In Home page', () => {
+describe('Home page', () => {
 
     before(function() {
         // runs once before the first test in this block
         HomePage.open(config.testUrl);
     });
 
-    it('verify video is playing', () => {
+    it('should have a video banner', () => {
         HomePage.acceptCookies();
         browser.pause(2000);
         HomePage.takeVideoScreenshot(config.screenshotLoc, 'image1');
