@@ -2,7 +2,7 @@
  * main page object containing all methods, selectors and functionality
  * that is shared across all page objects
  */
-let Utils = require('../../src/utils/utils.js');
+let Utils = require('../utils/utils.js');
 let utils = new Utils();
 
 module.exports = class Page {

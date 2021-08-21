@@ -4,7 +4,8 @@
   "description": "Test suite for volvo automation task",
   "scripts": {
     "desktopMobile": "wdio config/mobileWeb.config.js",
-    "desktopWeb": "npx wdio ./config/desktopWeb.config.js",
+    "desktopChrome": "npx wdio config/desktopChrome.config.js",
+    "desktopFirefox": "npx wdio config/desktopFirefox.config.js",
     "vrt": "npx wdio ./config/visualRegression.config.js",
     "lint": "eslint ."
   },
@@ -34,7 +35,10 @@
     "wdio-html-nice-reporter": "^7.7.14",
     "resemblejs": "^4.0.0",
     "mz": "^2.7.0",
-    "wdio-image-comparison-service": "^2.3.0"
+    "wdio-image-comparison-service": "^2.3.0",
+    "@wdio/firefox-profile-service": "^7.8.0",
+    "geckodriver": "^2.0.3",
+    "marionette": "^5.0.0-alpha.2"
   },
   "dependencies": {
     "@wdio/selenium-standalone-service": "^7.8.0",

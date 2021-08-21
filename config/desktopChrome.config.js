@@ -31,9 +31,6 @@ config.services = [
                         version: '92.0.4515.43',
                         arch: process.arch,
                         baseURL: 'https://chromedriver.storage.googleapis.com'
-                    },
-                    firefox: {
-                        version: '0.29.1'
                     }
                 }
             },
