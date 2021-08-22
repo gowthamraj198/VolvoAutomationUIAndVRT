@@ -45,15 +45,15 @@ config.capabilities = [
     {
         browserName: 'chrome',
         acceptInsecureCerts: true,
-        // 'goog:chromeOptions': {
-        // eslint-disable-next-line max-len
-        //     args: ['--headless', '--disable-gpu', "--no-sandbox", '--window-size=1280,800', '--disable-dev-shm-usage', '--disable-web-security']
-        //   }
         'goog:chromeOptions': {
-            args: [
-                '--disable-web-security', '--window-size=375,812'
-            ]
-        }
+        //eslint-disable-next-line max-len
+            args: ['--headless', '--disable-gpu', "--no-sandbox", '--window-size=1280,800', '--disable-dev-shm-usage', '--disable-web-security']
+          }
+        // 'goog:chromeOptions': {
+        //     args: [
+        //         '--disable-web-security', '--window-size=375,812'
+        //     ]
+        // }
     }
 ]
 exports.config = config;

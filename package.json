@@ -3,7 +3,7 @@
   "version": "1.0.0",
   "description": "Test suite for volvo automation task",
   "scripts": {
-    "desktopMobile": "wdio config/mobileWeb.config.js",
+    "mobileWeb": "wdio config/mobileWeb.config.js",
     "desktopChrome": "npx wdio config/desktopChrome.config.js",
     "desktopFirefox": "npx wdio config/desktopFirefox.config.js",
     "vrt": "npx wdio ./config/visualRegression.config.js",
