@@ -47,7 +47,7 @@ config.capabilities = [
         acceptInsecureCerts: true,
         'goog:chromeOptions': {
         //eslint-disable-next-line max-len
-            args: ['--headless', '--disable-gpu', "--no-sandbox", '--window-size=1280,800', '--disable-dev-shm-usage', '--disable-web-security']
+            args: ['--headless', '--disable-gpu', "--no-sandbox", '--window-size=375,812', '--disable-dev-shm-usage', '--disable-web-security']
           }
         // 'goog:chromeOptions': {
         //     args: [
