@@ -5,6 +5,14 @@ config.specs = [
     // './src/specs/desktopWeb/verifyVideoIsPlaying*.js'
 ];
 
+config.suites= {
+    regression: [
+        './test/specs/desktopWeb/verifyVideoIsPlaying.js'
+    ],
+    smoke: [
+        './test/specs/desktopWeb/pageElementsTest.js'
+    ]
+}
 config.maxInstances = 3
 
 config.services = [

@@ -5,6 +5,7 @@
   "scripts": {
     "mobileWeb": "wdio config/mobileWeb.config.js",
     "desktopChrome": "npx wdio config/desktopChrome.config.js",
+    "desktopChromeSmoke": "npx wdio config/desktopChrome.config.js --suite smoke",
     "desktopFirefox": "npx wdio config/desktopFirefox.config.js",
     "vrt": "npx wdio ./config/visualRegression.config.js",
     "lint": "eslint ."

@@ -14,6 +14,7 @@ UI Automation and Visual Regression Testing using WebDriverIO and mocha
 - [X] Test scenarios in mocha
 - [X] Chrome and firefox (latest versions) with various window sizes
 - [X] Parallel execution
+- [X] Grouping of tests to create multiple test suites
 - [X] HTML reporting with screenshots
 
 ## Running tests in local machine
@@ -26,6 +27,8 @@ Follow the below commands:
 - Execute `npm run mobileWeb` to run in chrome headless (window size - 375 X 812)
 
 - Execute `npm run desktopChrome` to run chrome headless  (window size - 1200 X 800)
+
+- Execute `npm run desktopChromeSmoke` to run smoke test suite in chrome headless  (window size - 1200 X 800)
 
 - Execute `npm run desktopFirefox` to run firefox [make sure you run in non-headless mode]
 
@@ -43,6 +46,7 @@ Follow the below commands:
   - Install dependencies using `npm i` in the terminal.
   - Execute `npm run mobileWeb` to run in chrome headless (window size - 375 X 812)
   - Execute `npm run desktopChrome` to run chrome headless  (window size - 1200 X 800)
+  - Execute `npm run desktopChromeSmoke` to run smoke test suite in chrome headless  (window size - 1200 X 800)
   - Execute `npm run desktopFirefox` to run firefox headless
   - Execute `npm run vrt` to run visual regression testing in chrome headless
 
@@ -87,3 +91,11 @@ desktopWeb | tests that run in normal web browser
 mobileBrowser | tests that run in chrome (window size - 1200 X 800)
 visualRegression   | vrt tests
 
+## Some Highlights
+
+- Added `selector method` to identify selectors based on driver / platform. This helps us to reuse the same tests across platforms like mobile, web etc. 
+- Added an util method `compare screen` to compare 2 screens. this helps to add tests to test video banner (video playing or not), broken images etc.
+- Only Basic Tests are added. 
+- `desktopWeb and mobileBrowser specs` are running same tests here. It is not necessary to have same tests in both specs. Different specs are created so that we can add different tests.
+- Retry failing tests.
+- Group tests to create different test suites like smoke, regressin. It is only added in desktopChrome. It can be extended to other configs also 
